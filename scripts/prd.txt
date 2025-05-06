@@ -1,0 +1,103 @@
+# Spotify Downloader UI - Product Requirements Document
+
+## Overview
+The Spotify Downloader UI is a graphical user interface for the existing Spotify Playlist Extractor tool. It will provide an intuitive and user-friendly way for users to extract and analyze track information from Spotify playlists, with a focus on discovering "hidden gems" - tracks with high potential but low popularity.
+
+## Objectives
+1. Create a modern, intuitive UI for the existing command-line tool
+2. Maintain all functionality of the current Spotify Playlist Extractor
+3. Add visual representations of data analysis
+4. Improve user experience for non-technical users
+5. Support all existing features in a graphical interface
+
+## User Personas
+1. **Casual Music Fan**: Wants to discover new music and share playlists easily
+2. **Music Curator**: Needs to analyze playlists deeply and create new collections
+3. **Content Creator**: Uses the tool to find unique tracks for videos/podcasts
+4. **Data Analyst**: Interested in music trends and visualization of data
+
+## Technical Requirements
+1. Use PyQt6 for the GUI framework
+2. Maintain separation between UI and backend logic
+3. Ensure all existing functionality remains intact
+4. Support cross-platform deployment (Windows, macOS, Linux)
+5. Follow modern GUI design principles
+6. Implement responsive layouts for different screen sizes
+7. Ensure proper error handling and user feedback
+
+## Core Features
+
+### 1. Authentication & Setup
+- Simplified Spotify API credentials setup
+- Visual OAuth flow for authentication
+- Credentials storage and management
+- Connection status indicator
+
+### 2. Playlist Input & Management
+- URL input for single playlists
+- Batch URL input capabilities
+- File import for multiple playlists
+- Playlist preview before processing
+- Recent playlists history
+
+### 3. Processing & Status
+- Visual progress indicators
+- Detailed processing logs
+- Cancellation capability
+- Error handling with recovery options
+- Background processing capability
+
+### 4. Results Display
+- Tabular view of extracted tracks
+- Sortable and filterable track lists
+- Visualization of hidden gems scoring
+- Export options (CSV, TXT, etc.)
+- Direct links to Spotify content
+
+### 5. Hidden Gems Analysis
+- Visual representation of scoring system
+- Interactive thresholds adjustment
+- Comparative analysis between playlists
+- Percentage visualizations for metrics
+- Custom scoring adjustment
+
+### 6. Playlist Creation
+- Preview of new playlists before creation
+- Customizable playlist metadata
+- Drag-and-drop track reordering
+- Selection options for inclusion/exclusion
+- Creation status and confirmation
+
+### 7. Settings & Configuration
+- User preferences storage
+- Appearance customization
+- Default values configuration
+- Output location management
+- Advanced options configuration
+
+## Non-Functional Requirements
+1. **Performance**: The UI should not significantly impact processing speed
+2. **Usability**: Intuitive enough for first-time users without documentation
+3. **Reliability**: Graceful handling of API limits and network issues
+4. **Compatibility**: Support for high-DPI displays and accessibility features
+5. **Internationalization**: Support for multiple languages (future expansion)
+
+## Development Phases
+1. **Foundation**: Basic UI framework, authentication, and simple playlist processing
+2. **Core Features**: Complete implementation of main functionality
+3. **Advanced Analysis**: Enhanced visualizations and analytical tools
+4. **User Experience**: Refinements based on feedback and usability testing
+5. **Distribution**: Packaging for various platforms and installer creation
+
+## Success Criteria
+1. All existing command-line functionality is accessible through the UI
+2. New users can complete basic tasks without reference to documentation
+3. Processing large playlists remains efficient and provides appropriate feedback
+4. Visual representations enhance understanding of the data
+5. User feedback indicates preference for the UI over command-line version
+
+## Constraints
+1. Must maintain compatibility with existing codebase
+2. Should not require additional API credentials or permissions
+3. Must respect Spotify API usage limits and terms of service
+4. Should minimize additional dependencies beyond PyQt 

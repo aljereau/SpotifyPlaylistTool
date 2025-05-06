@@ -1,0 +1,16 @@
+# Task ID: 6
+# Title: Gem Score Calculator
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Implement the final scoring system for hidden gems
+# Details:
+Create the comprehensive scoring system that combines:
+- Base popularity inverse score
+- Playlist context quality score
+- Market presence score
+- Temporal analysis score
+- Final weighted calculation
+
+# Test Strategy:
+Test with known hidden gems and mainstream tracks

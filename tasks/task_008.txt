@@ -1,0 +1,15 @@
+# Task ID: 8
+# Title: Playlist Generation
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Implement automatic playlist creation for hidden gems
+# Details:
+Create system to:
+- Generate playlists from top-scored tracks
+- Handle Spotify playlist creation
+- Manage track ordering
+- Handle playlist updates
+
+# Test Strategy:
+Test playlist creation with various gem selections
